@@ -23,7 +23,7 @@ import java.sql.Statement;
  * Created by songqq on 2017/10/20.
  */
 public class OracleTables {
-    public Long getTablesCount(ArrayList<String> tables){
+    public ArrayList<Long> getTablesCount(ArrayList<String> tables){
         ArrayList<Long> oracleCount = new ArrayList<Long>();
         Properties props = new Properties();
         InputStream in = new BufferedInputStream(new FileInputStream("resources/config.properties"));
@@ -40,14 +40,14 @@ public class OracleTables {
             while (iter.hasNext()) {
                 String sql = "select count(*) from " + iter.next() + ";";
                 ResultSet set = stmt.executeQuery(sql);
-                if(set.next()) {
-                    oracleCount.add(Long.parseLong(set.getString(1)));
-                }
-                else {
+                if (set.next()) {
+                    oracleCount.add(set.getLong(1));
+                } else {
                     oracleCount.add(-1);
                 }
+            }
             con.close();
-            return count;
+            return oracleCount;
         } catch(Exception e){
             e.printStackTrace();
             return -1;

@@ -36,7 +36,7 @@ public class HiveTables {
                 String sql = "select count(*) from " + iter.next() + ";";
                 ResultSet set = stmt.executeQuery(sql);
                 if(set.next()) {
-                    hiveCount.add(Long.parseLong(set.getString(1)));
+                    hiveCount.add(set.getLong(1));
                 }
                 else {
                     hiveCount.add(-1);
