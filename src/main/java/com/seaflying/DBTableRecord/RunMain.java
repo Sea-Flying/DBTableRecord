@@ -15,14 +15,13 @@ public class RunMain {
     /**
      * Created by songqq on 2017/10/19.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)throws Exception {
         TablesIOImpl run = new TablesIOImpl();
         OracleTables f1 = new OracleTables();
         HiveTables f2 = new HiveTables();
         Map<String,ArrayList<String>> tblist = run.getTablesname();
         run.setTabelsCount(f1.getTablesCount(tblist.get("oracle")) ,f2.getTablesCount(tblist.get("hive")) );
-
-
+        run.con.close();
     }
 
 }

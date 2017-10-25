@@ -1,5 +1,7 @@
 package com.seaflying.DBTableRecord;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,35 +25,30 @@ import java.sql.Statement;
  * Created by songqq on 2017/10/20.
  */
 public class OracleTables {
-    public ArrayList<Long> getTablesCount(ArrayList<String> tables){
+    public ArrayList<Long> getTablesCount(ArrayList<String> tables)throws Exception{
         ArrayList<Long> oracleCount = new ArrayList<Long>();
         Properties props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("resources/config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
         props.load(in);
         String oracleUrl = props.getProperty("OracleJDBCUrl");
         String oracleUser = props.getProperty("OracleUser");
         String oraclePwd = props.getProperty("OraclePasswd");
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection(oracleUrl, oracleUser,
-                   oraclePwd);
-            java.sql.Statement stmt = con.createStatement();
-            ListIterator<String> iter = tables.listIterator();
-            while (iter.hasNext()) {
-                String sql = "select count(*) from " + iter.next() + ";";
-                ResultSet set = stmt.executeQuery(sql);
-                if (set.next()) {
-                    oracleCount.add(set.getLong(1));
-                } else {
-                    oracleCount.add(-1);
-                }
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        Connection con = DriverManager.getConnection(oracleUrl, oracleUser,
+               oraclePwd);
+        java.sql.Statement stmt = con.createStatement();
+        ListIterator<String> iter = tables.listIterator();
+        while (iter.hasNext()) {
+            String sql = "select count(*) from " + iter.next() ;
+            ResultSet set = stmt.executeQuery(sql);
+            if (set.next()) {
+                oracleCount.add(set.getLong(1));
+            } else {
+                oracleCount.add(-1L);
             }
-            con.close();
-            return oracleCount;
-        } catch(Exception e){
-            e.printStackTrace();
-            return -1;
         }
+        con.close();
+        return oracleCount;
     }
 
 }

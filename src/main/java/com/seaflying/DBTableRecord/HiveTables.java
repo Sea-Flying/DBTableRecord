@@ -18,36 +18,33 @@ import java.sql.SQLException;
  * Created by songqq on 2017/10/20.
  */
 public class HiveTables {
-    public ArrayList<Long> getTablesCount(ArrayList<String> tables){
+    public ArrayList<Long> getTablesCount(ArrayList<String> tables)throws Exception{
         ArrayList<Long> hiveCount = new ArrayList<Long>();
         Properties props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("resources/config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
         props.load(in);
         String hiveUrl = props.getProperty("HiveJDBCUrl");
         String hiveUser = props.getProperty("HiveUser");
         String hivePwd = props.getProperty("HivePasswd");
-        try {
+
             Class.forName("org.apache.hive.jdbc.HiveDriver");
             Connection con = DriverManager.getConnection(hiveUrl, hiveUser,
                     hivePwd);
             java.sql.Statement stmt = con.createStatement();
             ListIterator<String> iter = tables.listIterator();
             while (iter.hasNext()) {
-                String sql = "select count(*) from " + iter.next() + ";";
+                String sql = "select count(*) from test." + iter.next() + ";";
                 ResultSet set = stmt.executeQuery(sql);
                 if(set.next()) {
                     hiveCount.add(set.getLong(1));
                 }
                 else {
-                    hiveCount.add(-1);
+                    hiveCount.add(-1L);
                 }
             }
-            stm
+            stmt.close();
             con.close();
-        } catch(Exception e){
-            e.printStackTrace();
-            hiveCount.add(-1);
-        }
+
         return hiveCount;
     }
 }

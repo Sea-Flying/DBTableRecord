@@ -27,9 +27,9 @@ public class TablesIOImpl implements TablesIO {
     private String inTable;
     private String outTable;
 
-    public TablesIOImpl(){
+    public TablesIOImpl() throws Exception{
         this.props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("resources/config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
         this.props.load(in);
         String mysqlUrl = this.props.getProperty("MysqlJDBCUrl");
         String mysqlUser = this.props.getProperty("MysqlUser");
@@ -42,7 +42,8 @@ public class TablesIOImpl implements TablesIO {
         this.outTable=props.getProperty("MysqlOutTable");
     }
 
-    final public Map<String, ArrayList<String>> getTablesname() {
+
+    final public Map<String, ArrayList<String>> getTablesname() throws Exception {
         Map<String,ArrayList<String>> re = new HashMap<String, ArrayList<String>>();
         ArrayList<String> oracle = new ArrayList<String>();
         ArrayList<String> hive = new ArrayList<String>();
@@ -70,14 +71,17 @@ public class TablesIOImpl implements TablesIO {
         return re;
     }
 
-    final public Void setTabelsCount(ArrayList<Long> orcl_count, ArrayList<Long> hive_count,) {
+
+    final public void  setTabelsCount(ArrayList<Long> orcl_count, ArrayList<Long> hive_count) throws Exception {
         java.sql.Statement stmt = this.con.createStatement();
         Integer length = orcl_count.size();
+
         String sql;
         for (Integer i = 0 ; i < length; i++ ){
-            sql = "insert into "+this.outTable+" (pair_id, oracle_len, hive_len) values ("+(i+1)+","+orcl_count.get(i)+","+hive_count.get(i)+");";
-            stmt.executeQuery(sql);
+            sql = "insert into "+this.outTable+" (pair_id, oracle_len, hive_len, len_equal) values ("+(i+1)+","+orcl_count.get(i)+","+hive_count.get(i)+","+ (orcl_count.get(i) == hive_count.get(i) ? 1 :0 ) +");";
+            stmt.execute(sql);
         }
         stmt.close();
+        return ;
     }
 }
