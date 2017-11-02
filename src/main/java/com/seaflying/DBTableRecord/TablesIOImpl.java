@@ -1,14 +1,8 @@
 package com.seaflying.DBTableRecord;
 
 import javax.naming.CompositeName;
+import java.io.*;
 import java.util.*;
-
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,12 +23,11 @@ public class TablesIOImpl implements TablesIO {
 
     public TablesIOImpl() throws Exception{
         this.props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
         this.props.load(in);
         String mysqlUrl = this.props.getProperty("MysqlJDBCUrl");
         String mysqlUser = this.props.getProperty("MysqlUser");
         String mysqlPwd = this.props.getProperty("MysqlPasswd");
-
         Class.forName("com.mysql.jdbc.Driver");
         this.con = DriverManager.getConnection(mysqlUrl, mysqlUser,
                 mysqlPwd);
@@ -48,18 +41,8 @@ public class TablesIOImpl implements TablesIO {
         ArrayList<String> oracle = new ArrayList<String>();
         ArrayList<String> hive = new ArrayList<String>();
         java.sql.Statement stmt = this.con.createStatement();
-        String sql = "select count(*) from "+this.inTable+";";
+        String sql = "select oracle_table,hive_table from "+this.inTable+";";
         ResultSet set = stmt.executeQuery(sql);
-        Long count;
-        if(set.next()){
-            count = set.getLong(1);
-        }
-        else{
-            count = -1L;
-        }
-        this.props.setProperty("TablePairsCount",Long.toString(count));
-        sql = "select oracle_table,hive_table from "+this.inTable+";";
-        set = stmt.executeQuery(sql);
         while(set.next()){
             oracle.add(set.getString("oracle_table"));
             hive.add(set.getString("hive_table"));
@@ -74,10 +57,10 @@ public class TablesIOImpl implements TablesIO {
 
     final public void  setTabelsCount(ArrayList<Long> orcl_count, ArrayList<Long> hive_count) throws Exception {
         java.sql.Statement stmt = this.con.createStatement();
-        Integer length = orcl_count.size();
+        int length = orcl_count.size();
 
         String sql;
-        for (Integer i = 0 ; i < length; i++ ){
+        for (int i = 0 ; i < length; i++ ){
             sql = "insert into "+this.outTable+" (pair_id, oracle_len, hive_len, len_equal) values ("+(i+1)+","+orcl_count.get(i)+","+hive_count.get(i)+","+ (orcl_count.get(i) == hive_count.get(i) ? 1 :0 ) +");";
             stmt.execute(sql);
         }

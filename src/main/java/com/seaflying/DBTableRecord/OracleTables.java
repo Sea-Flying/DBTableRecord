@@ -28,7 +28,7 @@ public class OracleTables {
     public ArrayList<Long> getTablesCount(ArrayList<String> tables)throws Exception{
         ArrayList<Long> oracleCount = new ArrayList<Long>();
         Properties props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
         props.load(in);
         String oracleUrl = props.getProperty("OracleJDBCUrl");
         String oracleUser = props.getProperty("OracleUser");
@@ -39,14 +39,18 @@ public class OracleTables {
         java.sql.Statement stmt = con.createStatement();
         ListIterator<String> iter = tables.listIterator();
         while (iter.hasNext()) {
-            String sql = "select count(*) from " + iter.next() ;
+            String str1 = iter.next() ;
+            System.out.println(str1);
+            String sql = "select count(*) from " + str1 ;
             ResultSet set = stmt.executeQuery(sql);
             if (set.next()) {
                 oracleCount.add(set.getLong(1));
             } else {
                 oracleCount.add(-1L);
+                System.err.println("Empty Table : "+str1);
             }
         }
+        stmt.close();
         con.close();
         return oracleCount;
     }

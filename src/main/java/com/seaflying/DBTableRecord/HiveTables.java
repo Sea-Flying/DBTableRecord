@@ -21,7 +21,7 @@ public class HiveTables {
     public ArrayList<Long> getTablesCount(ArrayList<String> tables)throws Exception{
         ArrayList<Long> hiveCount = new ArrayList<Long>();
         Properties props = new Properties();
-        InputStream in = new BufferedInputStream(new FileInputStream("D:\\Workspace\\project\\DBTableRecord\\target\\classes\\config.properties"));
+        InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
         props.load(in);
         String hiveUrl = props.getProperty("HiveJDBCUrl");
         String hiveUser = props.getProperty("HiveUser");
@@ -33,13 +33,16 @@ public class HiveTables {
             java.sql.Statement stmt = con.createStatement();
             ListIterator<String> iter = tables.listIterator();
             while (iter.hasNext()) {
-                String sql = "select count(*) from test." + iter.next() + ";";
+                String str1 = iter.next();
+                System.out.println(str1);
+                String sql = "select count(*) from test." + str1 + ";";
                 ResultSet set = stmt.executeQuery(sql);
                 if(set.next()) {
                     hiveCount.add(set.getLong(1));
                 }
                 else {
                     hiveCount.add(-1L);
+                    System.err.println("Empty Table: "+str1);
                 }
             }
             stmt.close();
