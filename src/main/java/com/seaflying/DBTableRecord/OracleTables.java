@@ -40,14 +40,19 @@ public class OracleTables {
         ListIterator<String> iter = tables.listIterator();
         while (iter.hasNext()) {
             String str1 = iter.next() ;
-            System.out.println(str1);
             String sql = "select count(*) from " + str1 ;
-            ResultSet set = stmt.executeQuery(sql);
-            if (set.next()) {
-                oracleCount.add(set.getLong(1));
-            } else {
+            try{
+                ResultSet set = stmt.executeQuery(sql);
+                if (set.next()) {
+                    oracleCount.add(set.getLong(1));
+                } else {
+                    oracleCount.add(-1L);
+                    System.out.println("Empty Table : "+str1);
+                }
+            }
+            catch (SQLException e){
                 oracleCount.add(-1L);
-                System.err.println("Empty Table : "+str1);
+                e.printStackTrace();
             }
         }
         stmt.close();

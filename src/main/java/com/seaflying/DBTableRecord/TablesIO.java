@@ -8,5 +8,5 @@ import java.util.Map;
  */
 public interface TablesIO {
     Map<String, ArrayList<String>> getTablesname ()throws Exception;
-    void setTabelsCount( ArrayList<Long> a, ArrayList<Long> b ) throws Exception;
+    void setTabelsCount( ArrayList<String> i, ArrayList<Long> a, ArrayList<Long> b ) throws Exception;
 }

@@ -7,14 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b85781-bf3c-43c0-b3e3-b71687f07261" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/DBTableRecord_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TRWorker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/OracleTables.java" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/OracleTables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
     </list>
     <ignored path="DBTableRecord.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,34 +37,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RunMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RunMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="400">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OracleTables.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OracleTables.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/OracleTables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="458">
+              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding>
-                <marker date="1509341102505" expanded="true" signature="1566:1586" ph="select count... " />
-                <marker date="1509341102505" expanded="true" signature="1566:1587" ph="select count... missingValue" />
+                <marker date="1509676966640" expanded="true" signature="1528:1548" ph="select count... " />
+                <marker date="1509676966640" expanded="true" signature="1528:1549" ph="select count... missingValue" />
               </folding>
             </state>
           </provider>
@@ -74,11 +65,10 @@
       <file leaf-file-name="HiveTables.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-327">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="100">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
-                <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-                <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+                <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
               </folding>
             </state>
           </provider>
@@ -87,8 +77,8 @@
       <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="250">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -97,18 +87,34 @@
       <file leaf-file-name="TablesIOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1175">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="74">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-                <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-                <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-                <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-                <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-                <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-                <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-                <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+                <element signature="e#1362#1389#0" expanded="true" />
+                <element signature="e#1442#1450#0" expanded="true" />
+                <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+                <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+                <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+                <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+                <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+                <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+                <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+                <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+                <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TRWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TRWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#559#565#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,9 +123,11 @@
       <file leaf-file-name="TablesIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="300">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,25 +135,16 @@
       <file leaf-file-name="ConnectionImpl.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3450">
+            <state relative-caret-position="505">
               <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
               <folding>
                 <element signature="e#9867#9868#0" expanded="true" />
                 <marker date="1487078878000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
                 <marker date="1487078878000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
                 <marker date="1487078878000" expanded="true" signature="104472:104501" ph="select @@ses... " />
+                <marker date="1487078878000" expanded="true" signature="111505:111520" ph="/* missingVa... " />
                 <marker date="1487078878000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,13 +178,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/oracleTables.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/hiveTables.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/OracleTables.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/MyCallable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TRWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java" />
       </list>
     </option>
   </component>
@@ -211,10 +212,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1358" />
+    <option name="y" value="-264" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -375,13 +376,14 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.24733269" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yunwei" />
+    <property name="SearchEverywhereHistoryKey" value="pair_id&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -862,7 +864,7 @@
       <workItem from="1508813505652" duration="24407000" />
       <workItem from="1509065949787" duration="1829000" />
       <workItem from="1509326942368" duration="7684000" />
-      <workItem from="1509413075793" duration="10206000" />
+      <workItem from="1509413075793" duration="30159000" />
     </task>
     <task id="LOCAL-00001" summary="day2">
       <created>1508837841060</created>
@@ -878,11 +880,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508918088022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="beta2">
+      <created>1509610309862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509610309862</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73790000" />
+    <option name="totallyTimeSpent" value="93743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,62 +903,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-264" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271719" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.011090573" sideWeight="0.47830102" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.009803922" sideWeight="0.521699" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13918306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6025878" sideWeight="0.49676824" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6356209" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40528634" sideWeight="0.47830102" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009803922" sideWeight="0.521699" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13918306" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40418503" sideWeight="0.49676824" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4284141" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3061674" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21104388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20064725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24930748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4019608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46989965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14599092" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24346405" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60271317" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30852994" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -965,11 +947,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day2" />
     <MESSAGE value="beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta" />
+    <MESSAGE value="beta2" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -978,37 +961,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,6 +980,7 @@
             <marker date="1487078878000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
             <marker date="1487078878000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
             <marker date="1487078878000" expanded="true" signature="104472:104501" ph="select @@ses... " />
+            <marker date="1487078878000" expanded="true" signature="111505:111520" ph="/* missingVa... " />
             <marker date="1487078878000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
           </folding>
         </state>
@@ -1038,7 +998,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,8 +1009,7 @@
         <state relative-caret-position="275">
           <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
           <folding>
-            <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-            <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+            <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1067,14 +1028,17 @@
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+            <element signature="e#1362#1389#0" expanded="true" />
+            <element signature="e#1442#1450#0" expanded="true" />
+            <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+            <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
           </folding>
         </state>
       </provider>
@@ -1088,6 +1052,7 @@
             <marker date="1487078878000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
             <marker date="1487078878000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
             <marker date="1487078878000" expanded="true" signature="104472:104501" ph="select @@ses... " />
+            <marker date="1487078878000" expanded="true" signature="111505:111520" ph="/* missingVa... " />
             <marker date="1487078878000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
           </folding>
         </state>
@@ -1105,7 +1070,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,8 +1081,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-            <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+            <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1125,8 +1091,8 @@
         <state relative-caret-position="800">
           <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
-            <marker date="1509341102505" expanded="true" signature="1566:1586" ph="select count... " />
-            <marker date="1509341102505" expanded="true" signature="1566:1587" ph="select count... missingValue" />
+            <marker date="1509676966640" expanded="true" signature="1528:1548" ph="select count... " />
+            <marker date="1509676966640" expanded="true" signature="1528:1549" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1145,14 +1111,17 @@
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+            <element signature="e#1362#1389#0" expanded="true" />
+            <element signature="e#1442#1450#0" expanded="true" />
+            <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+            <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
           </folding>
         </state>
       </provider>
@@ -1161,7 +1130,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,8 +1141,7 @@
         <state relative-caret-position="825">
           <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
-            <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-            <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+            <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1181,8 +1151,8 @@
         <state relative-caret-position="350">
           <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
           <folding>
-            <marker date="1509341102505" expanded="true" signature="1566:1586" ph="select count... " />
-            <marker date="1509341102505" expanded="true" signature="1566:1587" ph="select count... missingValue" />
+            <marker date="1509676966640" expanded="true" signature="1528:1548" ph="select count... " />
+            <marker date="1509676966640" expanded="true" signature="1528:1549" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1201,14 +1171,17 @@
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+            <element signature="e#1362#1389#0" expanded="true" />
+            <element signature="e#1442#1450#0" expanded="true" />
+            <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+            <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
           </folding>
         </state>
       </provider>
@@ -1217,7 +1190,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,8 +1201,7 @@
         <state relative-caret-position="825">
           <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
-            <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-            <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+            <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1237,8 +1211,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509341102505" expanded="true" signature="1566:1586" ph="select count... " />
-            <marker date="1509341102505" expanded="true" signature="1566:1587" ph="select count... missingValue" />
+            <marker date="1509676966640" expanded="true" signature="1528:1548" ph="select count... " />
+            <marker date="1509676966640" expanded="true" signature="1528:1549" ph="select count... missingValue" />
           </folding>
         </state>
       </provider>
@@ -1257,14 +1231,17 @@
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+            <element signature="e#1362#1389#0" expanded="true" />
+            <element signature="e#1442#1450#0" expanded="true" />
+            <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+            <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
           </folding>
         </state>
       </provider>
@@ -1380,48 +1357,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/lib/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3450">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding>
-            <element signature="e#9867#9868#0" expanded="true" />
-            <marker date="1487078878000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
-            <marker date="1487078878000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
-            <marker date="1487078878000" expanded="true" signature="104472:104501" ph="select @@ses... " />
-            <marker date="1487078878000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1437,50 +1376,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java">
+    <entry file="jar://$PROJECT_DIR$/src/lib/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="505">
+          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509413466331" expanded="true" signature="1533:1553" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1563" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1568" ph="select oracl... " />
-            <marker date="1509413466331" expanded="true" signature="1533:1569" ph="select oracl... missingValue" />
-            <marker date="1509413466331" expanded="true" signature="2211:2302" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2322" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2346" ph="insert into missingValue... " />
-            <marker date="1509413466331" expanded="true" signature="2211:2401" ph="insert into missingValue... " />
+            <element signature="e#9867#9868#0" expanded="true" />
+            <marker date="1487078878000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
+            <marker date="1487078878000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
+            <marker date="1487078878000" expanded="true" signature="104472:104501" ph="select @@ses... " />
+            <marker date="1487078878000" expanded="true" signature="111505:111520" ph="/* missingVa... " />
+            <marker date="1487078878000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="300">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1509341102542" expanded="true" signature="1391:1412" ph="select count... missingValue" />
-            <marker date="1509341102542" expanded="true" signature="1391:1417" ph="select count... missingValue" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk8/src.zip!/java/util/concurrent/Callable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#1311#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TRWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#559#565#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="250">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/TablesIOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1362#1389#0" expanded="true" />
+            <element signature="e#1442#1450#0" expanded="true" />
+            <marker date="1509693252287" expanded="true" signature="1656:1663" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1669" ph="select oracl... " />
+            <marker date="1509693252287" expanded="true" signature="1656:1670" ph="select oracl... missingValue" />
+            <marker date="1509693252287" expanded="true" signature="2423:2435" ph="insert into missingValuemissingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2518" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2538" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2562" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2423:2641" ph="insert into missingValue... " />
+            <marker date="1509693252287" expanded="true" signature="2453:2504" ph="(pair_id, or... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/HiveTables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <marker date="1509695930408" expanded="true" signature="1349:1370" ph="select count... missingValue" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/OracleTables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="458">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding>
-            <marker date="1509341102505" expanded="true" signature="1566:1586" ph="select count... " />
-            <marker date="1509341102505" expanded="true" signature="1566:1587" ph="select count... missingValue" />
+            <marker date="1509676966640" expanded="true" signature="1528:1548" ph="select count... " />
+            <marker date="1509676966640" expanded="true" signature="1528:1549" ph="select count... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seaflying/DBTableRecord/RunMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1497,8 +1502,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20220995" />
-                <option value="0.52770084" />
+                <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

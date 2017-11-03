@@ -34,15 +34,19 @@ public class HiveTables {
             ListIterator<String> iter = tables.listIterator();
             while (iter.hasNext()) {
                 String str1 = iter.next();
-                System.out.println(str1);
-                String sql = "select count(*) from test." + str1 + ";";
-                ResultSet set = stmt.executeQuery(sql);
-                if(set.next()) {
-                    hiveCount.add(set.getLong(1));
+                String sql = "select count(*) from " + str1 + ";";
+                try {
+                    ResultSet set = stmt.executeQuery(sql);
+                    if (set.next()) {
+                        hiveCount.add(set.getLong(1));
+                    } else {
+                        hiveCount.add(-1L);
+                        System.out.println("Empty Table: " + str1);
+                    }
                 }
-                else {
+                catch (SQLException e){
                     hiveCount.add(-1L);
-                    System.err.println("Empty Table: "+str1);
+                    e.printStackTrace();
                 }
             }
             stmt.close();

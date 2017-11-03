@@ -23,6 +23,7 @@ public class TablesIOImpl implements TablesIO {
 
     public TablesIOImpl() throws Exception{
         this.props = new Properties();
+        System.out.println(new File(".").getCanonicalPath());
         InputStream in = new BufferedInputStream(new FileInputStream("config.properties"));
         this.props.load(in);
         String mysqlUrl = this.props.getProperty("MysqlJDBCUrl");
@@ -38,15 +39,18 @@ public class TablesIOImpl implements TablesIO {
 
     final public Map<String, ArrayList<String>> getTablesname() throws Exception {
         Map<String,ArrayList<String>> re = new HashMap<String, ArrayList<String>>();
+        ArrayList<String> pair_id = new ArrayList<String>();
         ArrayList<String> oracle = new ArrayList<String>();
         ArrayList<String> hive = new ArrayList<String>();
         java.sql.Statement stmt = this.con.createStatement();
-        String sql = "select oracle_table,hive_table from "+this.inTable+";";
+        String sql = "select * from "+this.inTable+";";
         ResultSet set = stmt.executeQuery(sql);
         while(set.next()){
+            pair_id.add(set.getString("tab_pair_id"));
             oracle.add(set.getString("oracle_table"));
             hive.add(set.getString("hive_table"));
         }
+        re.put("pair_id",pair_id);
         re.put("oracle",oracle);
         re.put("hive",hive);
         set.close();
@@ -55,13 +59,12 @@ public class TablesIOImpl implements TablesIO {
     }
 
 
-    final public void  setTabelsCount(ArrayList<Long> orcl_count, ArrayList<Long> hive_count) throws Exception {
+    final public void  setTabelsCount(ArrayList<String> id, ArrayList<Long> orcl_count, ArrayList<Long> hive_count) throws Exception {
         java.sql.Statement stmt = this.con.createStatement();
         int length = orcl_count.size();
-
         String sql;
         for (int i = 0 ; i < length; i++ ){
-            sql = "insert into "+this.outTable+" (pair_id, oracle_len, hive_len, len_equal) values ("+(i+1)+","+orcl_count.get(i)+","+hive_count.get(i)+","+ (orcl_count.get(i) == hive_count.get(i) ? 1 :0 ) +");";
+            sql = "insert into "+this.outTable+" (pair_id, oracle_len, hive_len, len_equal) values ("+id.get(i)+","+orcl_count.get(i)+","+hive_count.get(i)+","+ (orcl_count.get(i).longValue() == hive_count.get(i).longValue() ? 1 :0 ) +");";
             stmt.execute(sql);
         }
         stmt.close();
